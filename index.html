@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>zeroai サポート</title>
+<meta name="description" content="zeroaiが開発するiPhoneアプリ(Hibi / Fumi / Kakei / Ma)のサポートとプライバシーポリシー">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+<style>
+  :root {
+    --bg: #faf9f7; --surface: #fff; --text: #26231f; --muted: #6b645c; --border: #e6e1da; --accent: #2f2a3d;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #171512; --surface: #201d19; --text: #f0ebe4; --muted: #b3aaa0; --border: #37302a; --accent: #d8d0f5; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font-family: "Zen Kaku Gothic New", "Hiragino Sans", sans-serif; line-height: 1.8; padding-inline: 20px; padding-block: 56px; }
+  .page { max-width: 700px; margin-inline: auto; }
+  h1 { font-family: "Shippori Mincho", serif; font-size: 28px; margin: 0 0 6px; }
+  .lede { color: var(--muted); margin: 0 0 40px; }
+  h2 { font-family: "Shippori Mincho", serif; font-size: 19px; margin: 36px 0 12px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+  .apps { display: grid; gap: 12px; }
+  .app { display: flex; align-items: center; gap: 16px; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 14px 16px; }
+  .badge { flex: none; width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: #fff; font-family: "Shippori Mincho", serif; font-size: 24px; font-weight: 700; }
+  .app strong { display: block; }
+  .app span { color: var(--muted); font-size: 14px; }
+  .app a { color: var(--accent); font-size: 14px; }
+  p { max-width: 62ch; }
+  a { color: var(--accent); }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--muted); font-size: 13px; }
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>zeroai サポート</h1>
+  <p class="lede">zeroaiが開発するiPhoneアプリのサポートページです。</p>
+
+  <h2>アプリ一覧とプライバシーポリシー</h2>
+  <div class="apps">
+    <div class="app"><div class="badge" style="background:linear-gradient(135deg,#ff8a5c,#e85d75)">日</div><div><strong>Hibi kuro</strong><span>話すだけで日記になる音声日記</span><br><a href="hibi/privacy.html">プライバシーポリシー</a></div></div>
+    <div class="app"><div class="badge" style="background:linear-gradient(135deg,#4fd1c5,#2b8a9e)">文</div><div><strong>Fumi kuro</strong><span>書類を取り込んでAIに質問できる書類管理</span><br><a href="fumi/privacy.html">プライバシーポリシー</a></div></div>
+    <div class="app"><div class="badge" style="background:linear-gradient(135deg,#5ec98f,#127f5f)">家</div><div><strong>Kakei kuro</strong><span>レシートを撮るだけの家計簿</span><br><a href="kakei/privacy.html">プライバシーポリシー</a></div></div>
+    <div class="app"><div class="badge" style="background:linear-gradient(135deg,#8b7cff,#4f3fd6)">間</div><div><strong>Ma kuro</strong><span>AIと作る背景付きポモドーロタイマー</span><br><a href="ma/privacy.html">プライバシーポリシー</a></div></div>
+  </div>
+
+  <h2>お問い合わせ</h2>
+  <p>不具合のご報告・ご要望・ご質問は <a href="mailto:yasuashval@icloud.com">yasuashval@icloud.com</a> までメールでお寄せください。アプリ名とお使いのiPhoneの機種・iOSのバージョンを添えていただけると、確認がスムーズです。</p>
+
+  <h2>よくある質問</h2>
+  <p><strong>AI機能が使えません。</strong><br>各アプリのAI機能は、既定ではお使いの端末上のApple Intelligenceで動作します。iPhoneの「設定」→「Apple Intelligenceと Siri」でApple Intelligenceが有効になっているか、対応機種・対応地域かをご確認ください。設定画面からOpenAIのAPIキーを登録して利用する方法もあります。</p>
+  <p><strong>データはどこに保存されますか?</strong><br>記録・書類・レシート・生成した背景画像などは、すべてお使いの端末内にのみ保存されます。開発者を含め、外部の誰もアクセスできません。詳細は各アプリのプライバシーポリシーをご覧ください。</p>
+
+  <footer>zeroai</footer>
+</div>
+</body>
+</html>

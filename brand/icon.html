@@ -1,0 +1,39 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@700&display=swap">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:800px;height:800px;overflow:hidden}
+.icon{
+  width:800px;height:800px;position:relative;
+  background:linear-gradient(152deg,#28323f 0%,#1b2430 52%,#131a23 100%);
+  display:grid;place-items:center;
+}
+.ring{
+  position:absolute;width:640px;height:640px;border-radius:50%;
+  border:1px solid rgba(176,58,43,.5);
+}
+.ring::after{
+  content:"";position:absolute;inset:26px;border-radius:50%;
+  border:1px solid rgba(255,255,255,.07);
+}
+.mark{
+  position:relative;text-align:center;
+  font-family:"Zen Old Mincho",serif;font-weight:700;color:#fff;
+  line-height:1;letter-spacing:.1em;
+}
+.mark .zero{font-size:170px;display:block;text-indent:.1em}
+.mark .bar{
+  display:block;width:230px;height:5px;margin:34px auto;
+  background:#b03a2b;
+}
+.mark .ai{font-size:170px;display:block;text-indent:.1em}
+</style></head><body>
+<div class="icon">
+  <div class="ring"></div>
+  <div class="mark">
+    <span class="zero">ZERO</span>
+    <span class="bar"></span>
+    <span class="ai">AI</span>
+  </div>
+</div>
+</body></html>

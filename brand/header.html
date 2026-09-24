@@ -1,0 +1,45 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@700&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1500px;height:500px;overflow:hidden}
+.h{
+  width:1500px;height:500px;position:relative;overflow:hidden;
+  background:linear-gradient(105deg,#1b2430 0%,#232f3d 46%,#2b3948 100%);
+  display:flex;align-items:center;
+}
+/* 右側の薄い同心円 */
+.rings{position:absolute;right:-90px;top:50%;transform:translateY(-50%);
+       width:520px;height:520px;border-radius:50%;
+       border:1px solid rgba(255,255,255,.07)}
+.rings::before,.rings::after{content:"";position:absolute;border-radius:50%;
+       border:1px solid rgba(176,58,43,.28)}
+.rings::before{inset:52px}
+.rings::after{inset:118px;border-color:rgba(255,255,255,.06)}
+.inner{position:relative;padding-left:150px;max-width:1010px;transform:translateY(-20px)}
+.brand{
+  font-family:"Zen Old Mincho",serif;font-weight:700;color:#fff;
+  font-size:40px;letter-spacing:.34em;line-height:1
+}
+.rule{width:72px;height:3px;background:#b03a2b;margin:24px 0 26px}
+.copy{
+  font-family:"Zen Old Mincho",serif;font-weight:700;color:#fff;
+  font-size:52px;line-height:1.5;letter-spacing:.03em
+}
+.copy em{font-style:normal;
+  background:linear-gradient(transparent 68%, rgba(176,58,43,.85) 68%, rgba(176,58,43,.85) 88%, transparent 88%)}
+.sub{
+  margin-top:26px;font-family:"Zen Kaku Gothic New",sans-serif;
+  color:#9fb0bd;font-size:21px;letter-spacing:.06em
+}
+</style></head><body>
+<div class="h">
+  <div class="rings"></div>
+  <div class="inner">
+    <div class="brand">ZEROAI</div>
+    <div class="rule"></div>
+    <div class="copy">人を増やさずに、<em>手の届く値段</em>で。</div>
+    <div class="sub">お店のホームページ制作とGoogleの情報整備　／　zero-ai.jp</div>
+  </div>
+</div>
+</body></html>

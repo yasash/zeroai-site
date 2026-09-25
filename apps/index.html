@@ -16,6 +16,13 @@
   * { box-sizing: border-box; }
   body { margin: 0; background: var(--bg); color: var(--text); font-family: "Zen Kaku Gothic New", "Hiragino Sans", sans-serif; line-height: 1.8; padding-inline: 20px; padding-block: 56px; }
   .page { max-width: 700px; margin-inline: auto; }
+  .topnav { display: flex; flex-wrap: wrap; gap: 6px 18px; align-items: baseline;
+            margin-bottom: 30px; padding-bottom: 14px; border-bottom: 1px solid var(--border); }
+  .topnav .brand { font-family: "Shippori Mincho", serif; font-weight: 700;
+                   font-size: 17px; letter-spacing: .1em; color: var(--text); text-decoration: none; }
+  .topnav a:not(.brand) { font-size: 13.5px; color: var(--muted); text-decoration: none; }
+  .topnav a:not(.brand):hover { color: var(--text); }
+  .topnav .sp { flex: 1; }
   h1 { font-family: "Shippori Mincho", serif; font-size: 28px; margin: 0 0 6px; }
   .lede { color: var(--muted); margin: 0 0 40px; }
   h2 { font-family: "Shippori Mincho", serif; font-size: 19px; margin: 36px 0 12px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
@@ -32,7 +39,14 @@
 </head>
 <body>
 <div class="page">
-  <h1>アプリのサポート</h1>
+  <nav class="topnav">
+    <a class="brand" href="../">ZEROAI</a>
+    <span class="sp"></span>
+    <a href="../meo/">お店向けサービス</a>
+    <a href="../works/">制作例</a>
+    <a href="../info/">運営者情報</a>
+  </nav>
+<h1>アプリのサポート</h1>
   <p class="lede">ZEROAIが開発するiPhoneアプリのサポートページです。<br><a href="../">ZEROAI 会社案内へ</a></p>
 
   <h2>アプリ一覧とプライバシーポリシー</h2>
